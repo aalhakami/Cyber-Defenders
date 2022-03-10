@@ -190,4 +190,46 @@ ANSWER : 7.12
 
 #14 The employee engaged in a Skype conversation with someone. What is the skype username of the other party?
 
+When the investigation come to skype there is a powerfull tool we are going to use called skyperious .
+First let's extract all the evidnce that related to skype so we can import it to the tool .We can find it in AppData where does information stored such as conversations and other details , Then Roaming .
+
+![image](https://user-images.githubusercontent.com/99384019/157699850-6f0a930c-6445-49b1-9e42-005438275877.png)
+
+Now let's run the tool and import the file . let's explore main.db 
+
+![image](https://user-images.githubusercontent.com/99384019/157700650-eb97e335-0854-4674-ac86-0fd28f881b0e.png)
+
+Skype username of the other party is : Linux rul3z (linux-rul3z)
+
+ANSWER : linux-rul3z
+
+#15 What is the name of the application both parties agreed to use to exfiltrate data and provide remote access for the external attacker in their Skype conversation?
+
+While analyzing the chat i found the application which they agreed to use it .
+
+![image](https://user-images.githubusercontent.com/99384019/157701919-2c155018-1e8d-4ab1-99bf-33c2c57b319d.png)
+
+#16 What is the Gmail email address of the suspect employee?
+
+![image](https://user-images.githubusercontent.com/99384019/157702622-7c234c86-c6f2-4f5e-b8c3-0a6b43387e7b.png)
+
+ANSWER :  ehptmsgs@gmail.com
+
+#17 It looks like the suspect user deleted an important diagram after his conversation with the external attacker. What is the file name of the deleted diagram?
+
+While analyzing the chat we found : 
+
+![image](https://user-images.githubusercontent.com/99384019/157705348-627edc92-2ac6-452e-ab12-7fc9ce1d1abf.png)
+
+so it's obviously the diagram has send via outlook . let's check outlook file .  
+
+![image](https://user-images.githubusercontent.com/99384019/157705971-d0e26aa5-988a-44c7-8001-0e044ab20dc4.png)
+
+There is a backup folder with extension .pst let's open it using online pst viewer --> https://goldfynch.com/pst-viewer/
+
+![image](https://user-images.githubusercontent.com/99384019/157706764-a6b185fc-f74b-4767-8a5b-9e826b54e2cb.png)
+
+ANSWER : home-network-design-networking-for-a-single-family-home-case-house-arkko-1433-x-792.jpg
+
+#18 The user Documents' directory contained a PDF file discussing data exfiltration techniques. What is the name of the file?
 
