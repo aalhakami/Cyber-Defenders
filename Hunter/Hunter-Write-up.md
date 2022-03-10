@@ -162,5 +162,32 @@ let's open it with SQLite
 
 ANSWER : Tue Jun 21 05:12:09 2016
 
+#11 How many ports were scanned?
+
+Following-up with the previous question we found the number of scanning ports :
+
+![image](https://user-images.githubusercontent.com/99384019/157670914-2733aa94-a735-467d-ac12-97e290b2b92a.png)
+
+ANSWER = 1000
+
+#12 What ports were found "open"?(comma-separated, ascending)
+
+Following-up with the previous question we can found the open ports by seeing the output :
+
+![image](https://user-images.githubusercontent.com/99384019/157672238-df9ca365-2b44-49cd-857b-d32885e67219.png)
+
+![image](https://user-images.githubusercontent.com/99384019/157672398-05f9e468-4951-4454-8731-8ef98a5ad5ac.png)
+
+ANSWER : 22,80,9929,31337
+
+#13 What was the version of the network scanner running on this computer?
+
+We already discovered this answer in question number 9 .
+
+version 7.12
+
+ANSWER : 7.12
+
+#14 The employee engaged in a Skype conversation with someone. What is the skype username of the other party?
 
 
