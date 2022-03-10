@@ -233,3 +233,24 @@ ANSWER : home-network-design-networking-for-a-single-family-home-case-house-arkk
 
 #18 The user Documents' directory contained a PDF file discussing data exfiltration techniques. What is the name of the file?
 
+This is a gift qeustion thank you ali alhadi
+
+![image](https://user-images.githubusercontent.com/99384019/157707431-5d5dac6a-2380-4456-ad4c-51bcf3d296d8.png)
+
+
+ANSER : Ryan_VanAntwerp_thesis.pdf
+
+#19 What was the name of the Disk Encryption application Installed on the victim system? (two words space separated)
+
+After searching the whole disk , i could not find anything the good thing that i notes a program called BCWipe. BCWipe is designed to surgically delete specific data files without harming the hard drive; to erase all contents of whole hard drives . We found a log file let's search to the deleted program it has . 
+
+![image](https://user-images.githubusercontent.com/99384019/157709913-1111c53e-3b53-4cd0-af9f-4b8103f2327c.png)
+
+![image](https://user-images.githubusercontent.com/99384019/157709947-f694fd40-8dc7-47d7-9f4a-93e8063e397b.png)
+
+ANSWER : Crypto Swap.lnk
+
+#20 What are the serial numbers of the two identified USB storage?
+
+
+
