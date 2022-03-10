@@ -124,3 +124,43 @@ We will find it in the SAM registry file output file .
 Last Login Date : 2016-06-21 01:42:40Z
 
 ANSWER : 2016-06-21 01:42:40
+
+#9 There was a “Network Scanner” running on this computer, what was it? And when was the last time the suspect used it? Format: program.exe,YYYY-MM-DD HH:MM:SS UTC
+
+since we are suspecios the employee , if he did it of course he going to unstall the tool so we look for the uninstall program and we found Nmap and he is system and since he is using windows so it's maybe GUI (We will look for some other artifact to support our theory) .
+
+![image](https://user-images.githubusercontent.com/99384019/157659711-d526e706-555a-4eb9-9634-3259db93b443.png)
+
+
+We can find uninstall in registry file : SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
+Tool : Zenmap.exe version 7.12
+
+But , to get more details we should start analyze the Prefetch Files to help us to discover details about the programs was running on the system . 
+We can find Prefetch file in Windows\Prefetch . Extract the file then start analyze it using Eric Zimmerman tool PECmd .
+
+Now we can confirmed our theory the tool is zenmap 
+![image](https://user-images.githubusercontent.com/99384019/157666990-dba33a0c-8e52-465a-a23f-c3f07189588c.png)
+
+Using PECmd tool we got : 
+
+![image](https://user-images.githubusercontent.com/99384019/157667905-25467a6b-8859-494d-9620-01506782f206.png)
+
+
+ANSWER : zenmap.exe,2016-06-21 12:08:13 UTC
+
+#10 When did the port scan end? (Example: Sat Jan 23 hh:mm:ss 2016)
+
+There is a database stored in a file called zenmap.db in zenmap tool. By default, scans are kept in the database for 60 days and then removed. so let's check the database maybe we will get the answer for the question . 
+
+PATH = /Users/Hunter/.zenmap
+
+![image](https://user-images.githubusercontent.com/99384019/157669044-70aa80ad-5514-4d9e-bb84-0347a3121ae8.png)
+
+let's open it with SQLite 
+
+![image](https://user-images.githubusercontent.com/99384019/157669679-805ea16d-9764-4224-ae05-d32c292385ec.png)
+
+ANSWER : Tue Jun 21 05:12:09 2016
+
+
+
