@@ -2,6 +2,11 @@
 # Twitter : @Alhakami1_
 # Email : Aalhakami.26@gmail.com
 
+![image](https://user-images.githubusercontent.com/99384019/157856502-23d649da-6070-4390-a669-3b861ce7892a.png)
+
+![image](https://user-images.githubusercontent.com/99384019/157856624-2338eee7-2f0f-4713-87fb-b5365ee4dc78.png)
+
+**************************************************************************************************************************************************************************
 
 We have been provide with a disk image , let's open it with FTK IMAGER 
 
@@ -29,6 +34,10 @@ Now let's go and look to the hive that contain computer name
 
 ANSWER : 4ORENSICS
 
+
+**************************************************************************************************************************************************************************
+
+
 #2 What is the computer IP? 
 
 We can find the computer ip in registry hive --> \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{*}
@@ -37,6 +46,10 @@ let's go and get it .
 ![image](https://user-images.githubusercontent.com/99384019/157637347-57f6aecf-018a-4742-9222-706d2a343867.png)
 
 ANSWER :  10.0.2.15
+
+
+**************************************************************************************************************************************************************************
+
 
 #3 What was the DHCP LeaseObtainedTime?
 
@@ -49,6 +62,10 @@ BUT , it's epoch time let's convert it to human readable using https://www.epoch
 ![image](https://user-images.githubusercontent.com/99384019/157638242-0cb998a4-6648-462c-b7ed-44da784f341a.png)
 
 ANSWER : 21/06/2016 02:24:12 UTC
+
+
+**************************************************************************************************************************************************************************
+
 
 #4 What is the computer SID?
 
@@ -83,6 +100,11 @@ SID decoded = S-1-5-21-2489440558-2754304563-710705792
 
 ANSWER : S-1-5-21-2489440558-2754304563-710705792
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #5 What is the Operating System(OS) version? 
 
 The os version we can found it in --> Software\Microsoft\Windows NT\CurrentVersion
@@ -90,6 +112,11 @@ The os version we can found it in --> Software\Microsoft\Windows NT\CurrentVersi
 ![image](https://user-images.githubusercontent.com/99384019/157644857-6ee03006-ff30-4e86-bc81-f578b8938ffe.png)
 
 ANSWER : 8.1
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #6 What was the computer timezone? 
 
@@ -100,6 +127,11 @@ let's look at registry values name in --> SYSTEM\CurrentControlSet\Control\TimeZ
  Pacific Standard Time = UTC-07:00
  
  ANSWER = UTC-07:00
+
+
+**************************************************************************************************************************************************************************
+
+
  
  #7 How many times did this user log on to the computer? 
 
@@ -115,6 +147,11 @@ Login count = 3
 
 ANSWER : 3
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #8 When was the last login time for the discovered account? Format: one-space between date and time
 
 We will find it in the SAM registry file output file .
@@ -124,6 +161,11 @@ We will find it in the SAM registry file output file .
 Last Login Date : 2016-06-21 01:42:40Z
 
 ANSWER : 2016-06-21 01:42:40
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #9 There was a “Network Scanner” running on this computer, what was it? And when was the last time the suspect used it? Format: program.exe,YYYY-MM-DD HH:MM:SS UTC
 
@@ -148,6 +190,11 @@ Using PECmd tool we got :
 
 ANSWER : zenmap.exe,2016-06-21 12:08:13 UTC
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #10 When did the port scan end? (Example: Sat Jan 23 hh:mm:ss 2016)
 
 There is a database stored in a file called zenmap.db in zenmap tool. By default, scans are kept in the database for 60 days and then removed. so let's check the database maybe we will get the answer for the question . 
@@ -162,6 +209,11 @@ let's open it with SQLite
 
 ANSWER : Tue Jun 21 05:12:09 2016
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #11 How many ports were scanned?
 
 Following-up with the previous question we found the number of scanning ports :
@@ -169,6 +221,11 @@ Following-up with the previous question we found the number of scanning ports :
 ![image](https://user-images.githubusercontent.com/99384019/157670914-2733aa94-a735-467d-ac12-97e290b2b92a.png)
 
 ANSWER = 1000
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #12 What ports were found "open"?(comma-separated, ascending)
 
@@ -180,6 +237,11 @@ Following-up with the previous question we can found the open ports by seeing th
 
 ANSWER : 22,80,9929,31337
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #13 What was the version of the network scanner running on this computer?
 
 We already discovered this answer in question number 9 .
@@ -187,6 +249,11 @@ We already discovered this answer in question number 9 .
 version 7.12
 
 ANSWER : 7.12
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #14 The employee engaged in a Skype conversation with someone. What is the skype username of the other party?
 
@@ -203,17 +270,32 @@ Skype username of the other party is : Linux rul3z (linux-rul3z)
 
 ANSWER : linux-rul3z
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #15 What is the name of the application both parties agreed to use to exfiltrate data and provide remote access for the external attacker in their Skype conversation?
 
 While analyzing the chat i found the application which they agreed to use it .
 
 ![image](https://user-images.githubusercontent.com/99384019/157701919-2c155018-1e8d-4ab1-99bf-33c2c57b319d.png)
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #16 What is the Gmail email address of the suspect employee?
 
 ![image](https://user-images.githubusercontent.com/99384019/157702622-7c234c86-c6f2-4f5e-b8c3-0a6b43387e7b.png)
 
 ANSWER :  ehptmsgs@gmail.com
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #17 It looks like the suspect user deleted an important diagram after his conversation with the external attacker. What is the file name of the deleted diagram?
 
@@ -231,6 +313,11 @@ There is a backup folder with extension .pst let's open it using online pst view
 
 ANSWER : home-network-design-networking-for-a-single-family-home-case-house-arkko-1433-x-792.jpg
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #18 The user Documents' directory contained a PDF file discussing data exfiltration techniques. What is the name of the file?
 
 This is a gift qeustion thank you ali alhadi
@@ -239,6 +326,11 @@ This is a gift qeustion thank you ali alhadi
 
 
 ANSER : Ryan_VanAntwerp_thesis.pdf
+
+
+**************************************************************************************************************************************************************************
+
+
 
 #19 What was the name of the Disk Encryption application Installed on the victim system? (two words space separated)
 
@@ -250,7 +342,18 @@ After searching the whole disk , i could not find anything the good thing that i
 
 ANSWER : Crypto Swap.lnk
 
+
+**************************************************************************************************************************************************************************
+
+
+
 #20 What are the serial numbers of the two identified USB storage?
 
+We can find the identfied USB in registry key : \SYSTEM\CURRENTCONTROLSET\ENUM\USBSTOR
+
+![image](https://user-images.githubusercontent.com/99384019/157855058-22b4e8f4-0b7a-4b46-99b3-87601bb9498b.png)
+
+
+ANSWER = 07B20C03C80830A9,AAI6UXDKZDV8E9OU
 
 
