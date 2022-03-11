@@ -447,7 +447,7 @@ Then let's open the tool and load the hive .
 
 ![image](https://user-images.githubusercontent.com/99384019/157879838-b532f10a-7592-4568-b6a6-af7f0060755d.png)
 
-
+ANSWER : C:\Users\Hunter\Pictures\Exfil
 **************************************************************************************************************************************************************************
 
 
