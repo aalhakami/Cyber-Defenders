@@ -434,3 +434,38 @@ ANSWER :  Pictures.7z
 
 #27 Shellbags shows that the employee created a folder to include all the data he will exfiltrate. What is the full path of that folder?
 
+FIRST let's export the NTUSER.DAT AS WELL AS UsrCLASS.DAT but we could not find NTUSER.DAT so we will export only UsrCLASS.DAT then we will use Eric Zimmerman tool ShellBags Explorer .
+
+
+C:/Users/Hunter/AppData/Local/Microsoft/Windows
+
+![image](https://user-images.githubusercontent.com/99384019/157878704-7b701981-bc47-4978-99cc-d4bdbe87c8f6.png)
+
+Then let's open the tool and load the hive .
+
+![image](https://user-images.githubusercontent.com/99384019/157879065-8fb0ea73-653c-4192-8162-ce4a11546de5.png)
+
+![image](https://user-images.githubusercontent.com/99384019/157879838-b532f10a-7592-4568-b6a6-af7f0060755d.png)
+
+
+**************************************************************************************************************************************************************************
+
+
+#28 The user deleted two JPG files from the system and moved them to $Recycle-Bin. What is the file name that has the resolution of 1920x1200?
+
+![image](https://user-images.githubusercontent.com/99384019/157866040-4aad4e8a-2d5b-4540-8c23-17586f39aa12.png)
+
+ANSWER :  ws_Small_cute_kitty_1920x1200.jpg
+
+
+**************************************************************************************************************************************************************************
+
+
+#29 Provide the name of the directory where information about jump lists items (created automatically by the system) is stored?
+
+
+**************************************************************************************************************************************************************************
+
+
+#30 Using JUMP LIST analysis, provide the full path of the application with the AppID of "aa28770954eaeaaa" used to bypass network security monitoring controls.
+
