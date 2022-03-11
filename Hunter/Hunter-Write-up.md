@@ -357,3 +357,80 @@ We can find the identfied USB in registry key : \SYSTEM\CURRENTCONTROLSET\ENUM\U
 ANSWER = 07B20C03C80830A9,AAI6UXDKZDV8E9OU
 
 
+**************************************************************************************************************************************************************************
+
+
+#21 One of the installed applications is a file shredder. What is the name of the application? (two words space separated)
+
+We already discovered this answer in question number 19 . 
+
+![image](https://user-images.githubusercontent.com/99384019/157857827-6d4772a0-217d-4621-9e97-02019a294d0b.png)
+
+ANSWER : jetico bcwipe
+
+
+**************************************************************************************************************************************************************************
+
+
+#22 How many prefetch files were discovered on the system?
+
+let's extract prefetch file and open the WinPrefetchView . 
+
+![image](https://user-images.githubusercontent.com/99384019/157859278-07e61635-b72a-4ee1-8c8a-2478a46ca2f1.png)
+
+Answer = 174
+
+
+**************************************************************************************************************************************************************************
+
+
+#23 How many times was the file shredder application executed?
+
+First lets export the prefetch file of the BCwipe.exe and use Eric Zimmerman tool PECmd 
+
+![image](https://user-images.githubusercontent.com/99384019/157860497-fda1156c-d7dc-4ce0-a0a8-e03ee090177f.png)
+
+Answer = 5
+
+
+**************************************************************************************************************************************************************************
+
+
+#24 Using prefetch, determine when was the last time ZENMAP.EXE-56B17C4C.pf was executed?
+
+let's extract the ZENMAP.EXE-56B17C4C.pf prefetch file and use PECmd tool 
+
+![image](https://user-images.githubusercontent.com/99384019/157861266-7a5d8c2b-e9f2-49cc-8f97-bb520e91bb1e.png)
+
+ANSWER : 06/21/2016 12:08:13 PM
+
+
+**************************************************************************************************************************************************************************
+
+
+#25 A JAR file for an offensive traffic manipulation tool was executed. What is the absolute path of the file?
+
+Let's check Downloads folder .
+
+![image](https://user-images.githubusercontent.com/99384019/157863633-f2d84697-8756-4e4d-9a08-d64c328df5cf.png)
+
+ANSWER :  C:\Users\Hunter\Downloads\burpsuite_free_v1.7.03.jar
+
+
+**************************************************************************************************************************************************************************
+
+
+#26 The suspect employee tried to exfiltrate data by sending it as an email attachment. What is the name of the suspected attachment?
+
+Going back to question #17 let's see the sent mail we find 
+
+![image](https://user-images.githubusercontent.com/99384019/157864273-0f5065b4-1cf3-4340-98f7-7d09e1d4bdc4.png)
+
+ANSWER :  Pictures.7z
+
+
+**************************************************************************************************************************************************************************
+
+
+#27 Shellbags shows that the employee created a folder to include all the data he will exfiltrate. What is the full path of that folder?
+
