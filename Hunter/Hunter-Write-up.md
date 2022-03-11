@@ -448,6 +448,8 @@ Then let's open the tool and load the hive .
 ![image](https://user-images.githubusercontent.com/99384019/157879838-b532f10a-7592-4568-b6a6-af7f0060755d.png)
 
 ANSWER : C:\Users\Hunter\Pictures\Exfil
+
+
 **************************************************************************************************************************************************************************
 
 
@@ -463,9 +465,25 @@ ANSWER :  ws_Small_cute_kitty_1920x1200.jpg
 
 #29 Provide the name of the directory where information about jump lists items (created automatically by the system) is stored?
 
+ANSWER :  AutomaticDestinations
+
 
 **************************************************************************************************************************************************************************
 
 
 #30 Using JUMP LIST analysis, provide the full path of the application with the AppID of "aa28770954eaeaaa" used to bypass network security monitoring controls.
 
+Know let's export the JumpList items for this specifc AppID aa28770954eaeaaa 
+
+![image](https://user-images.githubusercontent.com/99384019/157883905-ed18a1fd-d968-4603-b66d-0519e477bf64.png)
+
+
+Now let's use Eric Zimmerman tool JumpList Explorer and start looking for the path	
+
+![image](https://user-images.githubusercontent.com/99384019/157884270-7345ea66-b4e9-41b0-9092-9b1bce21d067.png)
+
+ANSWER : C:\Users\Hunter\Desktop\Tor Browser\Browser\firefox.exe
+
+**************************************************************************************************************************************************************************
+
+![image](https://user-images.githubusercontent.com/99384019/157884931-813a515c-189a-42f3-a826-7042fef8ddc1.png)
