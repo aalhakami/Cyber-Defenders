@@ -92,6 +92,10 @@ There is only prefetch file for the Setup & THERE IS NO PREFETCH FILE FOR EXECUT
 
 ![image](https://user-images.githubusercontent.com/99384019/165429244-cda13b16-0a17-4a2e-85ac-044b272670ae.png)
 
+ANSWER : 0
 
 
+**************************************************************************************************************************************************************************
+
+#6 What is the suspect's email address?
 
