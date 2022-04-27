@@ -45,6 +45,11 @@ ANSWER : 9471e69c95d8909ae60ddff30d50ffa1
 
 #2 What phrase did the suspect search for on 2021-04-29 18:17:38 UTC? (three words, two spaces in between)
 
+To get the search history check the registry key in path : \HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
+
+But , first let's dump the registry files from : Windows\System32\Config\ 
+
+Let's start registry analysis using Eric Zimmerman tool RegistryExplorer : 
 
 
 
