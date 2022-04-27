@@ -88,7 +88,7 @@ ANSWER : 2021-04-29 18:22:17 UTC
 
 Let's check the Prefetch Files for Tor Browser .. Path : %SystemRoot%\Prefetch\
 
-There is only prefetch file for the Setup & THERE IS NO PREFETCH FILE FOR EXECUTING THE TOR BROWSER
+There is only a prefetch file for the Setup & THERE IS NO PREFETCH FILE FOR EXECUTING THE TOR BROWSER
 
 ![image](https://user-images.githubusercontent.com/99384019/165429244-cda13b16-0a17-4a2e-85ac-044b272670ae.png)
 
@@ -99,3 +99,61 @@ ANSWER : 0
 
 #6 What is the suspect's email address?
 
+While analyzing the history of the chrome browser we found out his email address : 
+
+![image](https://user-images.githubusercontent.com/99384019/165622682-12600fef-b325-4cde-8d94-f12d711041e2.png)
+
+Answer : dreammaker82@protonmail.com
+
+**************************************************************************************************************************************************************************
+
+#7 What is the FQDN did the suspect port scan?
+
+What does FQDN stand for ? Fully qualified domain name 
+
+Okay after analyzing the disk we notice that he use nmap tool for scanning (CHECK HIS DESKTOP) , So let's go and check nmap file (Because nmap store the history of the scan search in db file) , BUT we colud not find it ! 
+WHY ? 
+After a basic analysis on the uninstall programs we found out that the suspect uninstalled the nmap tool therefor the files of nmap has been deleted .
+
+![image](https://user-images.githubusercontent.com/99384019/165624350-39ae529d-6b93-40ce-b2f0-c125af8c5e4a.png)
+
+The good thing we can go and check the powershell history right ?
+
+From C:\Users\<username>\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+![image](https://user-images.githubusercontent.com/99384019/165628485-237bf66b-6f3e-4066-b39e-274238b95b5e.png)
+
+Answer : dfir.science
+
+
+
+**************************************************************************************************************************************************************************
+
+#8 What country was picture "20210429_152043.jpg" allegedly taken in?
+
+We can find the photo in (Pictures/Contact) 
+Let's extract the photo and try to find the meta data using Exiftool tool 
+
+![image](https://user-images.githubusercontent.com/99384019/165632243-82b3e539-9dc5-4f69-a233-8a0d529e0a69.png)
+
+Woow these seem instersting , am i right ?
+let's find out where does these GPS Coordinates lead us .. 
+
+![image](https://user-images.githubusercontent.com/99384019/165632651-abd23f75-fba8-4fa5-b5ed-2cd74b29f0ee.png)
+
+Answer : Zambia
+
+**************************************************************************************************************************************************************************
+
+#9 What is the parent folder name picture "20210429_151535.jpg" was in before the suspect copy it to "contact" folder on his desktop?
+
+
+First let's extract the photo and see the meta data , we will notice the photo was taken using LG mobile phone .
+
+So let's start shellbags analysis .
+1- Extract the registry hive Usrclass.dat from Users\John Doe\AppData\Local\Microsoft\Windows\Usrclass.dat
+2- use Eric ShellBagsExplorer & load the registry hive .
+
+![image](https://user-images.githubusercontent.com/99384019/165636336-55757208-6513-4553-998f-d0c761b54a94.png)
+
+Answer : Camera
