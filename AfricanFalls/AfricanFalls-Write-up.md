@@ -65,8 +65,32 @@ How do i know the time ? Good question ! Using DCode tool or any online stie tha
 Answer : password cracking lists
 
 
+**************************************************************************************************************************************************************************
+
+#3 ????????????????? What is the IPv4 address of the FTP server the suspect connected to? ?????????????????
+
+ANSWER : 192.168.1.20
+
+**************************************************************************************************************************************************************************
+
+#4 What date and time was a password list deleted in UTC? (YYYY-MM-DD HH:MM:SS UTC)
+
+Let's check the $RecycleBin folder and export the information file for the password list , then we will use Eric Zimmerman Tool RBCmd :
+
+![image](https://user-images.githubusercontent.com/99384019/165428528-fb5204f8-4186-4821-9d66-322ad5184d01.png)
+
+ANSWER : 2021-04-29 18:22:17 UTC 
+
+**************************************************************************************************************************************************************************
 
 
+#5 How many times was Tor Browser ran on the suspect's computer? (number only)
+
+Let's check the Prefetch Files for Tor Browser .. Path : %SystemRoot%\Prefetch\
+
+There is only prefetch file for the Setup & THERE IS NO PREFETCH FILE FOR EXECUTING THE TOR BROWSER
+
+![image](https://user-images.githubusercontent.com/99384019/165429244-cda13b16-0a17-4a2e-85ac-044b272670ae.png)
 
 
 
