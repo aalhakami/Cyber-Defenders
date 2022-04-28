@@ -173,3 +173,13 @@ ANSWER :AFR1CA!
 **************************************************************************************************************************************************************************
 
 #11	What is the user "John Doe's" Windows login password?
+
+To solve the question we should know where the windows store the users password ? In a registry hive SAM & SYSTEM so we are going to use a tool called samdump which is installed by defualt in linux .
+
+The password hash for John Does's = ecf53750b76cc9a62057ca85ff4c850e
+
+using hashcat or john the ripper or any hash cracking tool or website we will get the password .
+
+![image](https://user-images.githubusercontent.com/99384019/165662364-562d393b-1a31-4e95-95b9-f0858b90ef9c.png)
+
+Answer : ctf2021
