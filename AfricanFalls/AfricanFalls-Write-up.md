@@ -67,7 +67,14 @@ Answer : password cracking lists
 
 **************************************************************************************************************************************************************************
 
-#3 ????????????????? What is the IPv4 address of the FTP server the suspect connected to? ?????????????????
+#3 What is the IPv4 address of the FTP server the suspect connected to?
+
+While analyzing the disk we figure out there is a folder in this path \Users\John Doe\AppData\Roaming\FileZilla\ named recentservers.xml
+let's see the xml file
+
+![image](https://user-images.githubusercontent.com/99384019/165662744-a5ef7dd5-cfc3-420b-a419-43c6644d78f1.png)
+
+
 
 ANSWER : 192.168.1.20
 
