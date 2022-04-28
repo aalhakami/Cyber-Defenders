@@ -190,3 +190,8 @@ using hashcat or john the ripper or any hash cracking tool or website we will ge
 ![image](https://user-images.githubusercontent.com/99384019/165662364-562d393b-1a31-4e95-95b9-f0858b90ef9c.png)
 
 Answer : ctf2021
+
+
+**************************************************************************************************************************************************************************
+
+![image](https://user-images.githubusercontent.com/99384019/157884931-813a515c-189a-42f3-a826-7042fef8ddc1.png)
