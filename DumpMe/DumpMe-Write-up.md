@@ -12,10 +12,15 @@ Scenario:
 One of the SOC analysts took a memory dump from a machine infected with a meterpreter malware. As a Digital Forensicators, your job is to analyze the dump, extract the available indicators of compromise (IOCs) and answer the provided questions.
 
 
+
 We have been provided with a memory dump, let's start analyzing it using Volatility. 
 
 
 Now, Let's START ANSWERING THE QUESTIONS : )  
+
+
+**************************************************************************************************************************************************************************
+
 
 #1 What is the SHA1 hash of Triage-Memory.mem (memory dump)?
 Why we are calculating the SHA1 hash ? because the integrity of the memory dump .
@@ -129,3 +134,22 @@ ANSWER :  aad3b435b51404eeaad3b435b51404ee
 
 #10	What memory protection constants does the VAD node at 0xfffffa800577ba10 have?
 
+First what is VAD ? VAD stand for virtual address descriptor .
+
+What is VAD node ? 
+
+The VAD tree : 
+
+![image](https://user-images.githubusercontent.com/99384019/169735516-691fd551-63e4-40d2-95d0-a6f201b84bb7.png)
+
+
+![image](https://user-images.githubusercontent.com/99384019/169735463-a9871c26-2b2f-46ea-ba4f-1add37ce5d60.png)
+
+for more details:https://www.sciencedirect.com/science/article/pii/S1742287607000503#:~:text=The%20Virtual%20Address%20Descriptor%20tree,entry%20in%20the%20VAD%20tree.
+
+
+Using a plugin called vadinfo we can see Protection 
+
+![image](https://user-images.githubusercontent.com/99384019/169735380-6ff73e55-9050-4d91-be47-85cb1acc75d3.png)
+
+ANSWER : PAGE_READONLY
