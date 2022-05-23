@@ -189,7 +189,9 @@ ANSWER : SKYPE.exe
 
 *************************************************************************************************************************************************************************
 
-#14 First we will dump the process then we are going to use strings tool 
+#14 What was written in notepad.exe at the time when the memory dump was captured?
+
+First we will dump the process then we are going to use strings tool 
 
 ![image](https://user-images.githubusercontent.com/99384019/169841801-5d1f3655-1399-43da-a23c-2966fd98e1ee.png)
 
