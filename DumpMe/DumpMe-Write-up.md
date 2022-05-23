@@ -167,3 +167,46 @@ ANSWER : PAGE_NOACCESS
 
 *************************************************************************************************************************************************************************
 
+#12	There was a VBS script that ran on the machine. What is the name of the script? (submit without file extension)?
+
+Since the script had ran on the machine. So let's use cmdline plugin to show us the command that ran .
+
+![image](https://user-images.githubusercontent.com/99384019/169830394-822bef3a-f618-42e0-8dbf-bf73a0913d4a.png)
+
+We can see the process id is 5116 which means the process is the parent process of the infected one .
+
+ANSWER : vhjReUDEuumrX
+
+*************************************************************************************************************************************************************************
+
+#13	An application was run at 2019-03-07 23:06:58 UTC. What is the name of the program? (Include extension)
+
+We are going to use timeliner plugin then we look for this time 
+
+![image](https://user-images.githubusercontent.com/99384019/169834913-b32b0ec3-72d5-44d5-96ba-bc4024be4875.png)
+
+ANSWER : SKYPE.exe
+
+*************************************************************************************************************************************************************************
+
+#14 First we will dump the process then we are going to use strings tool 
+
+
+
+*************************************************************************************************************************************************************************
+
+#15	What is the short name of the file at file record 59045?
+
+Since this is a NTFS so we are going to dump the Master File Table using mftparser plugin , then we will search for a file record number = 59045
+
+![image](https://user-images.githubusercontent.com/99384019/169839808-7e67b26a-5324-48a0-b689-826fc6763acf.png)
+
+ANSWER :  EMPLOY~1.XLS
+
+*************************************************************************************************************************************************************************
+
+#16 This box was exploited and is running meterpreter. What was the infected PID?
+
+definitely, we know the infected process ,it is the process we previously scan it in virustotal .
+
+ANSWER : 3496
