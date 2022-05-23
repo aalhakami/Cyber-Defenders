@@ -138,6 +138,7 @@ First what is VAD ? VAD stand for virtual address descriptor .
 What is VAD node ? 
 
 The VAD tree : 
+VAD tree can provide useful information to an investigator such as the pattern of memory allocations used by a process and files mapped into its virtual address space.
 
 ![image](https://user-images.githubusercontent.com/99384019/169735516-691fd551-63e4-40d2-95d0-a6f201b84bb7.png)
 
