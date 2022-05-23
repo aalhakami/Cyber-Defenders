@@ -191,6 +191,13 @@ ANSWER : SKYPE.exe
 
 #14 First we will dump the process then we are going to use strings tool 
 
+![image](https://user-images.githubusercontent.com/99384019/169841801-5d1f3655-1399-43da-a23c-2966fd98e1ee.png)
+
+strings -e l using this option because notepad stores text in the little-endian format
+
+![image](https://user-images.githubusercontent.com/99384019/169842874-8c1ef8d2-7f8d-4922-acdb-a6ed0f65b4aa.png)
+
+ANSWER : flag<REDBULL_IS_LIFE>
 
 
 *************************************************************************************************************************************************************************
