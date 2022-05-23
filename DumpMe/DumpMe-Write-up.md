@@ -114,7 +114,6 @@ To make sure it is the infected process let's drop it in virustotal .
 
 ![image](https://user-images.githubusercontent.com/99384019/169734047-bf854151-8ee5-4c3a-b52c-50349f13fce4.png)
 
-![image](https://user-images.githubusercontent.com/99384019/169734093-5471bc44-bade-4361-8e6b-2a1823a4b54a.png)
 
 ![image](https://user-images.githubusercontent.com/99384019/169734129-3987f8a6-80c5-413f-99d8-f719d8ac9ef5.png)
 
