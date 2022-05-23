@@ -153,3 +153,17 @@ Using a plugin called vadinfo we can see Protection
 ![image](https://user-images.githubusercontent.com/99384019/169735380-6ff73e55-9050-4d91-be47-85cb1acc75d3.png)
 
 ANSWER : PAGE_READONLY
+
+*************************************************************************************************************************************************************************
+
+#11	What memory protection did the VAD starting at 0x00000000033c0000 and ending at 0x00000000033dffff have?
+
+As same as the prevouse question .
+
+![image](https://user-images.githubusercontent.com/99384019/169736174-53aee4e1-0084-42e3-b171-20ab1e9f2c7f.png)
+
+
+ANSWER : PAGE_NOACCESS
+
+*************************************************************************************************************************************************************************
+
