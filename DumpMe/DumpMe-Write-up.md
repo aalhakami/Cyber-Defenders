@@ -219,3 +219,7 @@ ANSWER :  EMPLOY~1.XLS
 definitely, we know the infected process ,it is the process we previously scan it in virustotal .
 
 ANSWER : 3496
+
+**************************************************************************************************************************************************************************
+
+![image](https://user-images.githubusercontent.com/99384019/157884931-813a515c-189a-42f3-a826-7042fef8ddc1.png)
